@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary"
+    >
+    <ImageButton
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:background="@drawable/back"
+        android:id="@+id/diy_titlebar_back"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/diy_titlebar_title"
+        android:text="@string/app_settings"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

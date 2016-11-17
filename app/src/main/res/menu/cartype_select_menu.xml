@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:BLE="http://schemas.android.com/apk/res-auto"
+    >
+    <item BLE:showAsAction="ifRoom"
+        android:icon="@drawable/back"
+        android:id="@+id/menu_back_2settting"
+        android:title="@string/app_name"
+        android:orderInCategory="1"
+        />
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.yy.gg.ble.diy.DiyBackBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/some_back"
+        />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/pass_nikename"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_confirm"
+        android:id="@+id/btn_confirm"
+        />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_cancle"
+            android:id="@+id/btn_cancle"
+            />
+
+    </LinearLayout>
+</LinearLayout>

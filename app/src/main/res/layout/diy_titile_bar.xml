@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary"
+    >
+    <ImageButton
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:background="@drawable/menu"
+        android:id="@+id/diy_titlebar_menu"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/diy_titlebar_text"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/diy_titlebar_setting"
+        android:layout_marginEnd="2dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/settings"
+        />
+
+</RelativeLayout>

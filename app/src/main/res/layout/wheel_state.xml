@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:BLE="http://schemas.android.com/apk/res-auto"
+    >
+    <com.yy.gg.ble.diy.DIYTitleBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/diy_titlebar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/car_id"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <!--table layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/table_container"
+                android:layout_weight="1">
+            </LinearLayout>
+            <!-- detailview-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:id="@+id/detail_container"
+                android:visibility="gone"
+                >
+                <!--air pressure-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_view_aipressure"
+                        android:text="@string/app_settings"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/pointer"
+                        android:id="@+id/pointer_image_airpress"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <com.yy.gg.ble.diy.DiySeekbar
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/diy_seekbar_airpress"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/danger_info"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/saveinfo"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_weight="2"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/danger_info"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--temper-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_settings"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:id="@+id/text_view_temper"
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/pointer"
+                        android:id="@+id/pointer_image_temper"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/progress_airpre"
+                        android:layout_height="80dp">
+                        <com.yy.gg.ble.diy.DiySeekbar
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/diy_seekbar_temper"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/danger_info"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/saveinfo"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_weight="2"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/danger_info"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--handle view-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:visibility="gone"
+                android:id="@+id/handle_layout"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/change_wheel"
+                    android:background="@drawable/wheel"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+
+                    >
+                    <Button
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tihuan_wheel"
+                        android:text="@string/app_name"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/huhuan_wheel"
+                        android:text="@string/app_name"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

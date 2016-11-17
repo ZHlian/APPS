@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.yy.gg.ble.diy.DiyBackBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="20dp"
+        >
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:text="@string/language"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/border_black"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/language_zh"
+                android:id="@+id/setting_language_cn"
+                android:background="#00000000"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/language_eg"
+                android:id="@+id/setting_language_fan"
+                android:background="#00000000"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/language_cn"
+                android:id="@+id/setting_language_en"
+                android:background="#00000000"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/setting_bt_nickname"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            style="textCommonStyle"
+            />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right_arrow"
+            android:id="@+id/bt_nickname_setting"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/setting_padd"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            style="textCommonStyle"
+            />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right_arrow"
+            android:id="@+id/pass_setting"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/setting_cartype"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            style="textCommonStyle"
+            />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right_arrow"
+            android:id="@+id/bind_cartype"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+
+        >
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/pressure"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                android:background="@drawable/border_black"
+                >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pressure_1"
+                android:id="@+id/air_pre_one"
+                android:background="@drawable/border_drawable"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pressure_2"
+                android:id="@+id/air_pre_two"
+                android:background="#00000000"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pressure_3"
+                android:id="@+id/air_pre_three"
+                android:background="#00000000"
+
+                />
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="@string/pressure_4"
+                android:id="@+id/air_pre_four"
+                android:background="#00000000"
+
+                />
+
+        </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="20dp"
+
+        >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/temper"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:background="@drawable/border_black"
+                >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/temper_hua"
+                android:id="@+id/setting_temper_hua"
+                android:background="@color/unselected"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/temper_she"
+                android:id="@+id/setting_temper_she"
+                android:background="@color/unselected"
+
+                />
+
+        </LinearLayout>
+
+</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="10dp"
+
+
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+
+            android:text="@string/noise_switch"
+            />
+        <Switch
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/setting_noise_switch"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="10dp"
+
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+                        android:paddingLeft="10dp"
+            android:text="@string/shake_switch"
+            />
+        <Switch
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/setting_shake_switch"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingTop="10dp"
+
+        >
+        <LinearLayout
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+
+                android:text="@string/pressure_max"
+                />
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                />
+
+        </LinearLayout>
+        <SeekBar
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+            android:id="@+id/setting_pressure_max"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingTop="10dp"
+
+        >
+        <LinearLayout
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/pressure_min"
+                android:paddingLeft="10dp"
+
+                />
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                />
+
+        </LinearLayout>
+        <SeekBar
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/setting_pressure_min"
+            style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+
+        >
+        <LinearLayout
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/temper_max"
+                android:paddingLeft="10dp"
+
+                />
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                />
+
+        </LinearLayout>
+        <SeekBar
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/setting_temper_max"
+            style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/OBD_switch"
+            android:paddingLeft="10dp"
+
+            />
+        <Switch
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/setting_OBD_switch"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>
